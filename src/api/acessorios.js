@@ -1,6 +1,6 @@
 import axios from "axios";
 export default class AcessoriosApi {
-  async buscarTodosOsAcessorios() {
+  async buscarTodasOsAcessorios() {
     const { data } = await axios.get("/acessorios/");
     return data.results;
   }
